@@ -9,10 +9,10 @@ import Foundation
 import UIKit
 
 class FormStyles {
-    static func styleFilledButton(_ button:UIButton) {
+    static func styleFilledButton(_ button:UIButton, _ rgb:(Double, Double, Double)) {
         
         // Filled rounded corner style
-        button.backgroundColor = UIColor.init(red: 72/255, green: 202/255, blue: 228/255, alpha: 1)
+        button.backgroundColor = UIColor.init(red: rgb.0/255, green: rgb.1/255, blue: rgb.2/255, alpha: 1)
         button.layer.cornerRadius = 5
         button.tintColor = UIColor.white
     }

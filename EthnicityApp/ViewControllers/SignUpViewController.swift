@@ -13,9 +13,6 @@ import WebKit
 
 class SignUpViewController: UIViewController {
 
-    @IBOutlet weak var usernameTextField: UITextField!
-    @IBOutlet weak var firstNameTextField: UITextField!
-    @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
@@ -32,7 +29,7 @@ class SignUpViewController: UIViewController {
 
     func setUpElements() {
         errorLabel.alpha = 0
-        FormStyles.styleFilledButton(createAccountButton)
+        FormStyles.styleFilledButton(createAccountButton, Constants.ButtonColors.loginColor)
     }
     /*
     // MARK: - Navigation
@@ -45,10 +42,7 @@ class SignUpViewController: UIViewController {
     */
     
     func validateFields() -> String? {
-        if usernameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+        if  emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             confirmPasswordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
             return "Please fill in all fields."
@@ -75,25 +69,30 @@ class SignUpViewController: UIViewController {
         if error != nil {
             showError(error!)
         } else {
-            let username = usernameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let firstName = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let confirmPassword = confirmPasswordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
             Auth.auth().createUser(withEmail: email, password: password) {(result, err) in
                 if err != nil {
-                    self.showError("Error creating user")
+                    self.showError("Email address already registered")
                 } else{
                     let db = Firestore.firestore()
-                    db.collection("users").addDocument(data: ["firstname":firstName, "lastname":lastName, "uid": result!.user.uid]) { (error) in
+                    db.collection("users").addDocument(data: ["uid": result!.user.uid]) { (error) in
                         if error != nil {
                             self.showError("Error saving user data")
                         }
                     }
+                    
+                    Auth.auth().currentUser?.sendEmailVerification {
+                        (error) in
+                        //
+                    }
+                    
+                    //self.transitionToProfile()
                 }
             }
+            
+            print("works")
         }
     }
     
@@ -102,5 +101,11 @@ class SignUpViewController: UIViewController {
         errorLabel.alpha = 1
     }
     
+//    func transitionToProfile() {
+//        let profileViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storeboard.profileViewController) as? ProfileViewController
+//
+//        view.window?.rootViewController = profileViewController
+//        view.window?.makeKeyAndVisible()
+//    }
 
 }

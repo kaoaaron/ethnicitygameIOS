@@ -9,4 +9,6 @@ target 'EthnicityApp' do
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'FBSDKLoginKit'
+  pod 'GoogleSignIn'
 end

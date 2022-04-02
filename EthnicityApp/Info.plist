@@ -2,6 +2,34 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb702039877832862</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.322001195309-0092h1d64idl1psnkb3fo79rqco0ekuj</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>702039877832862</string>
+	<key>FacebookClientToken</key>
+	<string>1519cc69e5517894a1bfb93169250ab4</string>
+	<key>FacebookDisplayName</key>
+	<string>EthnicityApp</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -21,5 +49,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Please allow permission to select and upload photo</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Please allow permission to access camera</string>
 </dict>
 </plist>

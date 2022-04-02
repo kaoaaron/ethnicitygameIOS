@@ -26,8 +26,8 @@ class ViewController: UIViewController {
     }
 
     func setUpElements() {
-        FormStyles.styleFilledButton(loginButton)
-        FormStyles.styleFilledButton(playButton)
+        FormStyles.styleFilledButton(loginButton, Constants.ButtonColors.loginColor)
+        FormStyles.styleFilledButton(playButton, Constants.ButtonColors.playColor)
     }
     
     func setUpVideo(){
