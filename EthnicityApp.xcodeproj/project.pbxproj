@@ -8,16 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		33FE866E7388F0A583DF0DE4 /* Pods_EthnicityApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC36E766FE54E8900E6E05A3 /* Pods_EthnicityApp.framework */; };
+		62A571B02806A0AB008C1A49 /* CelebrityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A571AF2806A0AB008C1A49 /* CelebrityListViewController.swift */; };
+		62A571B228073D75008C1A49 /* CelebInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A571B128073D75008C1A49 /* CelebInfoViewController.swift */; };
 		62AF384227DB3A06003E5A5C /* homeBG.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 62AF384127DB3A06003E5A5C /* homeBG.mp4 */; };
 		62AF384627E6CC1F003E5A5C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF384527E6CC1F003E5A5C /* Constants.swift */; };
 		62AF384827E6CE1D003E5A5C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF384727E6CE1D003E5A5C /* ProfileViewController.swift */; };
+		62AF384A27FE74C8003E5A5C /* PlayOptionsViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF384927FE74C8003E5A5C /* PlayOptionsViewScreen.swift */; };
+		62AF384F27FE7DD0003E5A5C /* PlayMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF384E27FE7DD0003E5A5C /* PlayMenuViewController.swift */; };
+		62AF385227FF572D003E5A5C /* GameManagerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF385127FF572D003E5A5C /* GameManagerVM.swift */; };
+		62AF385427FF57A8003E5A5C /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF385327FF57A7003E5A5C /* QuizModel.swift */; };
+		62AF385727FF59DD003E5A5C /* OptionsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF385627FF59DD003E5A5C /* OptionsGridView.swift */; };
 		62B63C3F27DAEE66008025F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B63C3E27DAEE66008025F2 /* AppDelegate.swift */; };
 		62B63C4127DAEE66008025F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B63C4027DAEE66008025F2 /* SceneDelegate.swift */; };
 		62B63C4327DAEE66008025F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B63C4227DAEE66008025F2 /* ViewController.swift */; };
 		62B63C4627DAEE66008025F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B63C4427DAEE66008025F2 /* Main.storyboard */; };
 		62B63C4827DAEE67008025F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B63C4727DAEE67008025F2 /* Assets.xcassets */; };
 		62B63C4B27DAEE67008025F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B63C4927DAEE67008025F2 /* LaunchScreen.storyboard */; };
-		62B63C5327DAF00F008025F2 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B63C5227DAF00F008025F2 /* PlayViewController.swift */; };
 		62B63C5527DAF03C008025F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B63C5427DAF03C008025F2 /* LoginViewController.swift */; };
 		62B63C5827DB00F4008025F2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B63C5727DB00F4008025F2 /* SignUpViewController.swift */; };
 		62B63C5B27DB0B23008025F2 /* FormStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B63C5A27DB0B23008025F2 /* FormStyles.swift */; };
@@ -27,9 +33,16 @@
 
 /* Begin PBXFileReference section */
 		019714FE886D8C64C5113958 /* Pods-EthnicityApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EthnicityApp.release.xcconfig"; path = "Target Support Files/Pods-EthnicityApp/Pods-EthnicityApp.release.xcconfig"; sourceTree = "<group>"; };
+		62A571AF2806A0AB008C1A49 /* CelebrityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebrityListViewController.swift; sourceTree = "<group>"; };
+		62A571B128073D75008C1A49 /* CelebInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelebInfoViewController.swift; sourceTree = "<group>"; };
 		62AF384127DB3A06003E5A5C /* homeBG.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = homeBG.mp4; sourceTree = "<group>"; };
 		62AF384527E6CC1F003E5A5C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		62AF384727E6CE1D003E5A5C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		62AF384927FE74C8003E5A5C /* PlayOptionsViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayOptionsViewScreen.swift; sourceTree = "<group>"; };
+		62AF384E27FE7DD0003E5A5C /* PlayMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMenuViewController.swift; sourceTree = "<group>"; };
+		62AF385127FF572D003E5A5C /* GameManagerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManagerVM.swift; sourceTree = "<group>"; };
+		62AF385327FF57A7003E5A5C /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
+		62AF385627FF59DD003E5A5C /* OptionsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsGridView.swift; sourceTree = "<group>"; };
 		62B63C3B27DAEE66008025F2 /* EthnicityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EthnicityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B63C3E27DAEE66008025F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62B63C4027DAEE66008025F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +51,6 @@
 		62B63C4727DAEE67008025F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62B63C4A27DAEE67008025F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62B63C4C27DAEE67008025F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62B63C5227DAF00F008025F2 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		62B63C5427DAF03C008025F2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		62B63C5727DB00F4008025F2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		62B63C5A27DB0B23008025F2 /* FormStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormStyles.swift; sourceTree = "<group>"; };
@@ -76,6 +88,31 @@
 			path = Media;
 			sourceTree = "<group>";
 		};
+		62AF384B27FE74ED003E5A5C /* SwiftUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				62AF384927FE74C8003E5A5C /* PlayOptionsViewScreen.swift */,
+			);
+			path = SwiftUIViews;
+			sourceTree = "<group>";
+		};
+		62AF385027FF5706003E5A5C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				62AF385127FF572D003E5A5C /* GameManagerVM.swift */,
+				62AF385327FF57A7003E5A5C /* QuizModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		62AF385527FF59CF003E5A5C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				62AF385627FF59DD003E5A5C /* OptionsGridView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		62B63C3227DAEE66008025F2 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +134,9 @@
 		62B63C3D27DAEE66008025F2 /* EthnicityApp */ = {
 			isa = PBXGroup;
 			children = (
+				62AF385527FF59CF003E5A5C /* Components */,
+				62AF385027FF5706003E5A5C /* ViewModels */,
+				62AF384B27FE74ED003E5A5C /* SwiftUIViews */,
 				62AF383E27DB38D6003E5A5C /* Media */,
 				62B63C5927DB0AFB008025F2 /* Helpers */,
 				62B63C5627DAF062008025F2 /* ViewControllers */,
@@ -114,11 +154,13 @@
 		62B63C5627DAF062008025F2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				62B63C5227DAF00F008025F2 /* PlayViewController.swift */,
 				62B63C4227DAEE66008025F2 /* ViewController.swift */,
 				62B63C5427DAF03C008025F2 /* LoginViewController.swift */,
 				62B63C5727DB00F4008025F2 /* SignUpViewController.swift */,
 				62AF384727E6CE1D003E5A5C /* ProfileViewController.swift */,
+				62AF384E27FE7DD0003E5A5C /* PlayMenuViewController.swift */,
+				62A571AF2806A0AB008C1A49 /* CelebrityListViewController.swift */,
+				62A571B128073D75008C1A49 /* CelebInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -259,15 +301,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62A571B02806A0AB008C1A49 /* CelebrityListViewController.swift in Sources */,
 				62B63C5827DB00F4008025F2 /* SignUpViewController.swift in Sources */,
-				62B63C5327DAF00F008025F2 /* PlayViewController.swift in Sources */,
+				62AF384A27FE74C8003E5A5C /* PlayOptionsViewScreen.swift in Sources */,
 				62AF384827E6CE1D003E5A5C /* ProfileViewController.swift in Sources */,
 				62B63C5B27DB0B23008025F2 /* FormStyles.swift in Sources */,
+				62AF384F27FE7DD0003E5A5C /* PlayMenuViewController.swift in Sources */,
 				62B63C5D27DB0CC8008025F2 /* FormValidation.swift in Sources */,
+				62AF385227FF572D003E5A5C /* GameManagerVM.swift in Sources */,
+				62AF385427FF57A8003E5A5C /* QuizModel.swift in Sources */,
+				62AF385727FF59DD003E5A5C /* OptionsGridView.swift in Sources */,
 				62B63C4327DAEE66008025F2 /* ViewController.swift in Sources */,
 				62AF384627E6CC1F003E5A5C /* Constants.swift in Sources */,
 				62B63C3F27DAEE66008025F2 /* AppDelegate.swift in Sources */,
 				62B63C5527DAF03C008025F2 /* LoginViewController.swift in Sources */,
+				62A571B228073D75008C1A49 /* CelebInfoViewController.swift in Sources */,
 				62B63C4127DAEE66008025F2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
